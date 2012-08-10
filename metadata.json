@@ -1,0 +1,59 @@
+{
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "name": "solarized",
+  "maintainer_email": "me@ryangeyer.com",
+  "attributes": {
+    "solarized/profile": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+        "Dark",
+        "Light"
+      ],
+      "default": "Dark",
+      "type": "string",
+      "recipes": [
+
+      ],
+      "display_name": "Solarized Profile"
+    },
+    "solarized/install_dir": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "solarized::install"
+      ],
+      "display_name": "Solarized Install Dir"
+    }
+  },
+  "license": "All rights reserved",
+  "suggestions": {
+  },
+  "platforms": {
+    "mac_os_x": ">= 0.0.0"
+  },
+  "maintainer": "Ryan J. Geyer",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "version": "0.0.1",
+  "recommendations": {
+  },
+  "recipes": {
+    "solarized::apple_colorpalette": "Sets up the apple color palette to use solarized",
+    "solarized::install": "Grabs the latest version of solarized from git and puts it in a specified location"
+  },
+  "groupings": {
+  },
+  "conflicting": {
+  },
+  "replacing": {
+  },
+  "description": "Installs/Configures solarized",
+  "providing": {
+  }
+}
